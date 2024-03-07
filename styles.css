@@ -242,5 +242,19 @@ footer ul {
   justify-content: center;
   padding: 2rem 0;
   color: hsl(168, 34%, 41%);
+}
 
+
+/*
+ -- MEDIA QUERIES
+*/
+
+.hidden {
+  display: none;
+}
+
+@media (width < 376px) {
+  .hidden {
+    display: inline-block;
+  }
 }
