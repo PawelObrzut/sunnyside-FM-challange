@@ -145,19 +145,16 @@ header {
 }
 
 .card-spacing {
-  padding: 2rem;
-  min-height: 22rem;
+  padding: 6rem 2rem;
 }
 
 .description {
   color: var(--gray);
 }
 
-.values img {
-  display: block;
+.values--card img {
   object-fit: cover;
-  width: 100%;
-  max-height: 100%;
+  max-width: 100%;
 }
 
 .values a {
@@ -192,6 +189,7 @@ header {
 
 .extras {
   background-position: center;
+  background-position-y: top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 40rem;
@@ -227,6 +225,7 @@ header {
     padding-top: 0;
     padding-right: 2rem;
   }
+
   .navbar--list {
     display: flex;
     position: relative;
@@ -234,12 +233,9 @@ header {
     background-color: transparent;
     color: var(--white);
     width: fit-content;
-
-
     top: 0;
     left: 0;
     height: fit-content;
-    
     visibility: visible;
   }
 
@@ -254,5 +250,63 @@ header {
 
   .main-title {
     font-size: 2.5rem;
+  }
+}
+
+@media (width > 691px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p, a {
+    font-size: 0.9rem;
+  }
+
+  .card-spacing {
+    padding: 1rem;
+    height: fit-content;
+  }
+
+  .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .values--card:nth-child(2) {
+    order: 1;
+  }
+
+  .values--card:nth-child(1) {
+    order: 2;
+  }
+
+  .values--card:nth-child(3) {
+    order: 3;
+  }
+
+  .values--card:nth-child(4) {
+    order: 4;
+  }
+
+  .values--card:nth-child(5) {
+    order: 5;
+  }
+
+  .values--card:nth-child(6) {
+    order: 6;
+  }
+}
+
+@media (width > 900px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, a {
+    font-size: 1rem;
+  }
+
+  .card-spacing {
+    padding: 2rem;
   }
 }
