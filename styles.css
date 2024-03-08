@@ -146,10 +146,15 @@ header {
     position: relative;
     flex-direction: row;
     background-color: transparent;
-    width: auto;
     color: var(--white);
+    width: fit-content;
+
+
+    top: 0;
+    left: 0;
+    height: fit-content;
+    
     visibility: visible;
-    padding-right: 0.5rem;
   }
 
   .active {
