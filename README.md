@@ -29,6 +29,7 @@ I built the project without frameworks. It is vanilla javascript, css and html.
 
 I do not deploy it because the project is simple. It was front-end skills practice for me. I improved my layout skills using flexbox and grid and rensponsive design techniques.
 
+  > I will improve css structure in the future as it seems a little over-engineered.
 
 ## Sharing my solution
 
